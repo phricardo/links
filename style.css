@@ -1,0 +1,173 @@
+/* Importing Varela Round from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+  font-family: 'Varela Round', sans-serif;
+}
+
+body {
+  background: #121212;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+::selection {
+  background: #000;
+  color: #ffffff;
+}
+
+/* CONTAINER */
+.container {
+  padding: 10px 0;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 800px;
+}
+
+.container div#perfil img {
+  border-radius: 50%;
+  height: 150px;
+  max-width: 150px;
+  margin: 0 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.container div#perfil div {
+  line-height: 0.5rem;
+  padding-bottom: 30px;
+}
+
+.container div#perfil div h1 {
+  font-size: 2rem;
+  font-weight: lighter;
+  color: #fff;
+}
+
+.container div#perfil div span {
+  font-size: 1.2rem;
+  color: #606060;
+}
+
+.container .logo {
+  height: 60px;
+  display: flex;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+
+/* LINK BOX */
+.linkBox {
+  display: flex;
+  cursor: pointer;
+  background-color: #212121;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #505050;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.linkBox h4 {
+  font-size: 1.2em;
+  font-weight: 500;
+  margin: 25px 10px 20px;
+  color: #fff;
+}
+
+.linkBox .iconify {
+  color: #00fd13;
+  font-size: 2em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+.linkBox.hover-zoom-effect .iconify {
+  overflow: hidden;
+}
+
+.linkBox.hover-zoom-effect .iconify {
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.linkBox.hover-zoom-effect:hover .iconify {
+  opacity: 0.4;
+  -moz-transform: rotate(-32deg) scale(1.4);
+  -ms-transform: rotate(-32deg) scale(1.4);
+  -o-transform: rotate(-32deg) scale(1.4);
+  -webkit-transform: rotate(-32deg) scale(1.4);
+  transform: rotate(-32deg) scale(1.4);
+}
+
+.linkBox.hover-expand-effect:after {
+  background-color: rgba(0, 0, 0, 0.1);
+  content: '.';
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  color: transparent;
+  -moz-transition: all 0.95s;
+  -o-transition: all 0.95s;
+  -webkit-transition: all 0.95s;
+  transition: all 0.95s;
+}
+
+.linkBox.hover-expand-effect:hover:after {
+  width: 100%;
+}
+
+/* EXTRA BOX */
+.extraBox {
+  margin: 20px 0;
+  border: solid 0.1em transparent;
+  border-radius: 10px;
+  background-color: #212121;
+  border: 1px solid #505050;
+}
+
+.extraBox div {
+  text-align: center;
+  padding: 0 20px 20px;
+}
+
+.extraBox p {
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #00fd13;
+}
+
+.extraBox div #chave {
+  text-align: center;
+  border: 1px solid #505050;
+  border-radius: 10px;
+  padding: 20px;
+  color: #fff;
+}
+
+.extraBox button {
+  outline: none;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+
+  background: #00fd13;
+  color: #000;
+  font-weight: 500;
+  font-size: 1.2rem;
+  border-radius: 0.8rem;
+}
